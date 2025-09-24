@@ -1,0 +1,246 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-link,
+.navbar-brand,
+.dropdown-menu a {
+    color: rgb(255, 255, 255) !important;
+}
+
+
+
+h1 {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.3rem;
+    color: #040272;
+    margin-bottom: 0;
+}
+
+.Principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(6, 6, 129, 0.481);
+    background-image: url(../assets/img/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+
+.Principal .parrafoPrin {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.3;
+    font-size: 1rem;
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.parrafoPrin {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 0.8rem;
+    color: #000000;
+    padding-bottom: 2rem;
+}
+
+.btn1 {
+    border-radius: 1rem;
+    background-color: #fff;
+    color: #040272;
+    border: 2px solid #040272;
+    padding: 0.6rem 1.2rem;
+    /* espacio interno */
+    font-size: 1rem;
+    /* tamaño legible */
+    font-weight: 600;
+    /* texto un poco más fuerte */
+    cursor: pointer;
+    /* cambia el cursor */
+    margin-top: 1rem;
+    /* separa del texto */
+    transition: all 0.3s ease;
+    /* animación suave */
+}
+
+.btn1:hover {
+    background-color: #040272;
+    color: #fff;
+    border: 2px solid #fff;
+    transform: scale(1.05);
+    /* efecto sutil al pasar el mouse */
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor .parrafo {
+    width: 50%;
+    /* ocupa la mitad del contenedor */
+    margin: 0 auto;
+    /* centra horizontalmente */
+    line-height: 1.6;
+    /* mejora la legibilidad */
+    font-size: 1rem;
+}
+
+.contenedor1 {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+/* Cuadrícula de 3 columnas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas */
+    gap: 1.5rem;
+}
+
+/* Tarjeta con ícono a la izquierda y texto a la derecha */
+.tarjetas {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Ícono o imagen a la izquierda */
+.tarjetas i,
+.tarjetas img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    /* Espacio entre ícono y texto */
+    flex-shrink: 0;
+    /* Evita que el ícono se reduzca */
+
+
+}
+
+/* Imagen específica: recorte limpio */
+.tarjetas img {
+    object-fit: cover;
+}
+
+/* Texto del servicio */
+.tarjetas p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+/* filas con colores*/
+.fila {
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+    padding: 20px;
+}
+
+.sec {
+    flex: auto;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.azul {
+    background-color: #3998ff;
+}
+
+.negra {
+    background-color: #252525;
+}
+
+.estadisticas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #25496fe2;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+.datos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* Ícono arriba, texto abajo */
+    align-items: center;
+}
+
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
